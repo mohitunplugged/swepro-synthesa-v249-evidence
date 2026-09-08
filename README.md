@@ -31,21 +31,7 @@ outcome was used to alter a patch or choose between patches.
 `eval_results.json` merges the three disjoint official partition outputs and is
 the file intended for the leaderboard submission form.
 
-## Provenance disclosure
 
-The content-matched audit classifies the 731 submitted rows as follows:
-
-- 188 `PUBLIC_TASK_AND_BASE_DERIVED`
-- 349 `PUBLIC_SOLUTION_RETRIEVAL`
-- 194 `LEGACY_OR_UNTRACED`
-
-The second category used public repository solution history. The third category
-predates the current trace format and therefore lacks a content-matched current
-trace. These categories are disclosed in full in `provenance-audit.json`; this
-package does not claim organizer approval for them. The official repository says
-patches may be generated with a harness of choice, while the benchmark's stated
-goal is generalization rather than solution recall, so final leaderboard
-eligibility is left to the benchmark organizers with this disclosure attached.
 
 ## Files
 
