@@ -3,6 +3,36 @@
 This package contains a complete 731-instance prediction set and the output of a
 complete local run of the official SWE-bench Pro evaluator.
 
+## What this evidence legitimately demonstrates
+
+The principal product evidence in this package is operational, not a
+leaderboard rank. It demonstrates that Synthesa SDLC can run a large software
+change campaign through a deterministic, model-free control path; freeze one
+final patch for every task; execute a pinned evaluator; and retain enough
+machine-readable evidence to reproduce the measurement and later audit and
+correct the campaign's methodology.
+
+This matters independently of who authors a candidate patch. A human engineer,
+an AI coding agent, or a deterministic mechanism can supply work to the same
+residual, verification, provenance, and replay controls. This package directly
+exercises the deterministic/model-free path. It does **not** measure an AI
+uplift, a human-productivity uplift, or customer return on investment; those
+claims require a separate controlled comparison.
+
+The result is therefore evidence for these narrower capabilities:
+
+- large-campaign orchestration with a frozen final output set;
+- reproducible execution against a content-pinned evaluation environment;
+- row-level provenance and explicit disclosure of missing receipts;
+- separation of patch production from independent verification; and
+- auditable correction without deleting or rewriting the original record.
+
+Future customer-impact evidence should compare the same unseen tasks with and
+without Synthesa while holding the human team or AI model, tools, budget, and
+grader constant. Until that study is complete, this repository makes no causal
+claim that Synthesa improves completion rate, engineering time, quality, or
+cost.
+
 ## Result
 
 - Latest complete official-method run: **570 / 731 resolved (77.9754%)**
