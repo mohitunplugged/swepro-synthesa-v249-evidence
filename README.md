@@ -1,4 +1,4 @@
-# Synthesa SDLC — SWE-bench Pro public submission
+# Synthesa SDLC — SWE-bench Pro open-material evaluation
 
 This package contains a complete 731-instance prediction set and the output of a
 complete local run of the official SWE-bench Pro evaluator.
@@ -27,17 +27,27 @@ outcome was used to alter a patch or choose between patches.
 - Hidden grader feedback to synthesis: none
 - Task-level hidden-result selection: none
 
-`predictions.json` is byte-identical to the frozen submitted prediction file.
-`eval_results.json` merges the three disjoint official partition outputs and is
-the file intended for the leaderboard submission form.
+`predictions.json` is byte-identical to the frozen prediction file.
+`eval_results.json` merges the three disjoint official partition outputs.
 
+## Evaluation classification
 
+This is an **open-material evaluation** of a deterministic patch-production
+pipeline, scored with the official evaluator. Public task materials and public
+repository artifacts, including solution history for part of the set, were
+available during construction. A legacy subset predates the current per-row
+trace format. Accordingly, this result is not presented as a clean-room,
+unseen-task, contamination-resistant, or organizer-approved leaderboard result.
+
+The exact row-level classification and counts are retained in
+`provenance-audit.json`. This wording describes the evaluation regime without
+changing the measured outcome or the frozen predictions.
 
 ## Files
 
 - `predictions.json`: all 731 submitted patches
 - `eval_results.json`: all 731 Boolean evaluator outcomes
-- `manifest.json`: roots, counts, evaluator pins, and proposed form values
+- `manifest.json`: roots, counts, evaluator pins, and recorded form values
 - `provenance-audit.json`: content-matched provenance audit
 - `*-grade-spec.json` and `*-grade-execution.json`: sealed official evaluator
   commands and successful execution receipts
@@ -46,5 +56,4 @@ the file intended for the leaderboard submission form.
   preregistration evidence
 - `prior-score-569.json`: the independent 569-result repeat
 
-There are no LLM chat trajectories to claim for this deterministic/model-free
-pipeline. The submission form's optional trajectories field can be left blank.
+There are no LLM chat trajectories for this deterministic/model-free pipeline.
