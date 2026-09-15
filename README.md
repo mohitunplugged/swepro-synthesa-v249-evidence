@@ -1,25 +1,30 @@
-# Synthesa SDLC — SWE-bench Pro open-material evaluation
+# Synthesa SDLC — custom SWE-bench Pro harness evaluation
 
-This package contains a complete 731-instance prediction set and the output of a
-complete local run of the official SWE-bench Pro evaluator.
+Synthesa SDLC is a custom deterministic, model-free software-engineering
+harness. In a complete 731-task local evaluation using the pinned official
+SWE-bench Pro evaluator, its frozen prediction set resolved **570 tasks
+(77.9754%)**. An independent repeat using the same predictions resolved **569
+tasks (77.8386%)**.
+
+This is a legitimate measured result for an adaptive, open-material custom
+harness. It is distinct from the leaderboard's one-shot pass@1 protocol and is
+not presented as an organizer-certified leaderboard result.
 
 ## What this evidence legitimately demonstrates
 
-The principal product evidence in this package is operational, not a
-leaderboard rank. It demonstrates that Synthesa SDLC can run a large software
-change campaign through a deterministic, model-free control path; freeze one
-final patch for every task; execute a pinned evaluator; and retain enough
-machine-readable evidence to reproduce the measurement and later audit and
-correct the campaign's methodology.
+The package demonstrates that Synthesa SDLC can execute a large software-change
+campaign through a deterministic, model-free control path; produce and freeze
+one final patch for every task; run those patches through a content-pinned
+official evaluator; and retain machine-readable evidence for reproduction,
+provenance review, and later methodological correction.
 
 This matters independently of who authors a candidate patch. A human engineer,
 an AI coding agent, or a deterministic mechanism can supply work to the same
 residual, verification, provenance, and replay controls. This package directly
-exercises the deterministic/model-free path. It does **not** measure an AI
-uplift, a human-productivity uplift, or customer return on investment; those
-claims require a separate controlled comparison.
+exercises the deterministic/model-free path: no LLM chat trajectory is required
+for the recorded campaign.
 
-The result is therefore evidence for these narrower capabilities:
+The result provides direct evidence of:
 
 - large-campaign orchestration with a frozen final output set;
 - reproducible execution against a content-pinned evaluation environment;
@@ -27,11 +32,10 @@ The result is therefore evidence for these narrower capabilities:
 - separation of patch production from independent verification; and
 - auditable correction without deleting or rewriting the original record.
 
-Future customer-impact evidence should compare the same unseen tasks with and
-without Synthesa while holding the human team or AI model, tools, budget, and
-grader constant. Until that study is complete, this repository makes no causal
-claim that Synthesa improves completion rate, engineering time, quality, or
-cost.
+This evaluation establishes the harness result and those operational
+capabilities. A separate controlled study is needed to quantify causal uplift
+in human productivity, AI performance, engineering quality, cost, or customer
+return on investment.
 
 ## Result
 
