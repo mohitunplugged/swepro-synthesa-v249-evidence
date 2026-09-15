@@ -1,5 +1,10 @@
 # Synthesa SDLC — custom SWE-bench Pro harness evaluation
 
+> **Superseded publication.** The current, reader-first evaluation package is
+> [`mohitunplugged/synthesa-sdlc-swepro-evaluation`](https://github.com/mohitunplugged/synthesa-sdlc-swepro-evaluation).
+> This repository is retained as the historical publication and correction
+> trail; use the new repository for the result, methodology, and evidence.
+
 Synthesa SDLC is a custom deterministic, model-free software-engineering
 harness. In a complete 731-task local evaluation using the pinned official
 SWE-bench Pro evaluator, its frozen prediction set resolved **570 tasks
